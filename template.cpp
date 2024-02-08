@@ -17,10 +17,32 @@ const long long INF = LLONG_MAX >> 1;
 const long long NINF = LLONG_MIN;
 
 class Solution {
+
 public:
 
+int minimumTimeToInitialState(string s, int k) {
 
+    int c = 0;
 
+    c++;
+
+    for(int i=k;i<s.size();i+=k){
+
+        string tmp1 = s.substr(0, s.size() - i);
+
+        string tmp2 = "";
+
+        for(int j=i;j<s.size();j++) tmp2 += s[j];
+
+        if(tmp1 == tmp2) return c;
+    
+        c++;
+
+    }
+
+    return c;
+        
+}
 
 };
 

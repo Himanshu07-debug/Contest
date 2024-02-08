@@ -1,0 +1,5 @@
+1. Agar string me any 2 or 3 length Palindrome nhi hai, then there is no need to check for higher lengths, We can say STRING is not Palindrome..
+
+2. We will only check the i-1 and i-2 characters not i + 1, i + 2, becz Once current character i ko modify krne ke baad I have the Liberty to
+modify aby of the characters from i+1 to n-1
+
