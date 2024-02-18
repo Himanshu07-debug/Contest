@@ -20,6 +20,38 @@ class Solution {
 
 public:
 
+int longestCommonPrefix(vector<int>& arr1, vector<int>& arr2) {
+
+    unordered_map<string, int> m;
+
+    for(int i=0;i<arr1.size();i++){
+        string s = to_string(arr1[i]);
+
+        for(int j=1;j<=s.size();j++){
+            m[s.substr(0, j)]++;
+        }
+    }
+
+    int mx = -1;
+
+    for(int i=0;i<arr2.size();i++){
+
+        string s = to_string(arr2[i]);
+
+        for(int j=1;j<=s.size();j++){
+
+            if(m.find(s.substr(0, j)) != m.end()) mx = max(mx, j);
+            else break;
+
+        }
+
+    }
+    
+    if(mx == -1) return 0;
+    else return mx;
+        
+}
+
 
 };
 
