@@ -16,12 +16,8 @@ const long long MOD = 1e9 + 7;
 const long long INF = LLONG_MAX >> 1; 
 const long long NINF = LLONG_MIN;
 
-class Solution {
-
-public:
 
 
-};
 
 
 // int main(){
