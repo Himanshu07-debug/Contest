@@ -17,6 +17,13 @@ const long long INF = LLONG_MAX >> 1;
 const long long NINF = LLONG_MIN;
 
 
+int earliestSecondToMarkIndices(vector<int>& arr, vector<int>& brr) {
+
+
+    
+
+}
+
 
 
 
